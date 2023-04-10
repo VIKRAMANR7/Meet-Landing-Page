@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap");
+:root {
+  --heading-color: hsl(240, 20%, 27%);
+  --para-color: hsl(240, 10%, 57%);
+  --bg-cyan: hsl(192, 37%, 48%);
+  --bg-violet: hsl(268, 34%, 53%);
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-textcyan: hsl(192, 90%, 77%);
+}
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+input,
+button {
+  font: inherit;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a,
+button {
+  cursor: pointer;
+  border: none;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+}
+.container {
+  margin-top: 8rem;
+}
+.logo {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.header-three-col {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.second-col {
+  max-width: 500px;
+}
+h1 {
+  max-width: 350px;
+  margin: 0 auto 4rem auto;
+  font-size: 4.8rem;
+  line-height: 5.4rem;
+  color: var(--heading-color);
+  font-weight: 900;
+}
+.second-col p {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  color: var(--para-color);
+  font-weight: 500;
+}
+.main-content {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--para-color);
+  font-weight: 500;
+}
+button {
+  margin-top: 4rem;
+  width: 150px;
+  padding: 1.9rem 0;
+  font-size: 1.4rem;
+  border-radius: 2.5rem;
+  font-weight: 700;
+  color: var(--bg-white);
+}
+.btns {
+  margin-bottom: 15rem;
+}
+.download-blue {
+  margin-right: 1.5rem;
+  background: var(--bg-cyan);
+}
+.btn-violet {
+  background: var(--bg-violet);
+}
+.download-blue span {
+  color: var(--bg-textcyan);
+}
+.circle {
+  margin: 0 auto 8rem auto;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--para-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--para-color);
+  font-weight: 500;
+  position: relative;
+}
+.vl,
+.vltwo {
+  border-left: 1px solid var(--para-color);
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  top: -145%;
+}
+.img-gallery {
+  max-width: 1060px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 5rem auto;
+}
+.img-gallery img {
+  width: 250px;
+  height: 250px;
+  border-radius: 1.5rem;
+}
+.contents {
+  text-align: center;
+}
+.contents h4 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: var(--bg-cyan);
+  font-weight: 700;
+}
+.contents h2 {
+  max-width: 420px;
+  margin: 0 auto 4rem auto;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 900;
+}
+.contents p {
+  max-width: 450px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  padding-bottom: 10rem;
+}
+.circle-two {
+  top: -2rem;
+}
+footer {
+  background: url("./assets/desktop/image-footer.jpg") no-repeat;
+  box-shadow: inset 0 0 0 1440px rgba(77, 150, 168, 0.8);
+}
+.footer-col {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16rem;
+  color: var(--bg-white);
+  position: relative;
+  top: -5rem;
+}
+.footer-col h2 {
+  max-width: 330px;
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 900;
+}
+.footer-col p {
+  max-width: 300px;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  font-weight: 500;
+}
+.footer-col button {
+  margin: auto;
+  color: var(--bg-white);
+  background-color: var(--bg-violet);
+}
+.footer-col button span {
+  color: #d9b8ff;
+}
+.tablet-img {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .logo img {
+    margin: 0 auto 5rem auto;
+    text-align: center;
+  }
+  .header-three-col {
+    flex-direction: column;
+  }
+  .first-col,
+  .third-col {
+    display: none;
+  }
+  .tablet-img {
+    display: block;
+  }
+  h1 {
+    max-width: 350px;
+    margin: 8rem auto 4rem auto;
+    text-align: center;
+  }
+  .second-col {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .second-col p {
+    max-width: 480px;
+  }
+  .img-gallery {
+    max-width: 728px;
+    margin: 0 auto 5rem auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .img-gallery img {
+    max-width: 174.5px;
+    height: 190px;
+  }
+  .contents {
+    text-align: center;
+  }
+  .contents h4 {
+    margin-bottom: 2rem;
+  }
+  .contents h2 {
+    max-width: 420px;
+    margin: 0 auto 2rem auto;
+  }
+  .contents p {
+    max-width: 540px;
+    padding-bottom: 15rem;
+    margin: 0 auto;
+  }
+  footer {
+    background: url("./assets/tablet/image-footer.jpg") no-repeat;
+    box-shadow: inset 0 0 0 768px rgba(77, 150, 168, 0.8);
+  }
+  .footer-col {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-col h2 {
+    max-width: 500px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+  }
+  .footer-col p {
+    max-width: 480px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+  }
+  .footer-btn {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .logo {
+    text-align: center;
+  }
+  .first-col,
+  .third-col {
+    display: none;
+  }
+  .tablet-img {
+    display: block;
+  }
+  h1 {
+    max-width: 345px;
+    margin: 8rem auto 4rem auto;
+  }
+  .second-col p {
+    max-width: 325px;
+    margin: 0 auto 3rem auto;
+  }
+  .btns button {
+    display: block;
+    margin: 0 auto;
+  }
+  .download-blue {
+    margin-bottom: 2rem !important;
+  }
+  .btn-violet {
+    width: 120px;
+  }
+  .img-gallery {
+    max-width: 375px;
+    margin: 0 2rem 10rem 2rem;
+    display: grid;
+    grid-template-columns: 160px 160px;
+  }
+  .img-gallery img {
+    width: 160px;
+    height: 160px;
+  }
+  .contents h2 {
+    max-width: 310px;
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+  .contents p {
+    max-width: 305px;
+    font-size: 1.5rem;
+  }
+  footer {
+    background: url("./assets/mobile/image-footer.jpg") no-repeat;
+    background-size: 375px 428px;
+    box-shadow: inset 0 0 0 375px rgba(77, 150, 168, 0.8);
+  }
+  .footer-col {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-col h2 {
+    width: 375px;
+    margin: 0 auto 30px auto;
+  }
+  .footer-col div:nth-child(2) p {
+    padding: 0 60px;
+  }
+}
